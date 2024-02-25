@@ -34,7 +34,7 @@ pipeline {
             steps {
                 script{
                     sh ''' 
-                    docker build ${WORKSPACE}/jobs/dockerweb/ -t ${name_imagen}:${tag_imagen}
+                    docker build culturadevops/vid4/jobs/dockerweb/ -t ${name_imagen}:${tag_imagen}
                     '''
                     }
                     
